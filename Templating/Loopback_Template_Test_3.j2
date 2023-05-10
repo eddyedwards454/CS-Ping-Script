@@ -1,8 +1,0 @@
-
-{% for n in range(3) %}
-    {% for interface in data2.interfaces %}
-    interface {{interface.name}}{{ n+1 }}
-    description {{interface.description}}{{ n+1 }}
-    ip address {{interface.ipv4_addr}}{{ n+1}} {{interface.ipv4_mask}}
-    {% endfor %}
-{% endfor %}
