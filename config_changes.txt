@@ -1,0 +1,6 @@
+interface loopback 100
+description Done By Pyhton
+interface loopback 101
+description Done By Pyhton 
+no shutdown
+

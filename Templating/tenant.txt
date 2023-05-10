@@ -1,0 +1,21 @@
+
+        {
+            "fvTenant": {
+                "attributes": {
+                    "annotation": "orchestrator:msc",
+                    "childAction": "",
+                    "descr": "New Test Tenant",
+                    "dn": "uni/tn-Wayne_Edwards_Tenant",
+                    "extMngdBy": "msc",
+                    "lcOwn": "local",
+                    "modTs": "2022-06-30T22:32:22.720+01:00",
+                    "monPolDn": "uni/tn-common/monepg-default",
+                    "name": "Wayne_Edwards_Tenant",
+                    "nameAlias": "",
+                    "ownerKey": "",
+                    "ownerTag": "",
+                    "status": "",
+                    "uid": "15374"
+                }
+            }
+        }

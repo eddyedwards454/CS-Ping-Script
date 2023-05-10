@@ -1,0 +1,3 @@
+username,password,device,device_type,port,host,lo1ip,ifg00ip,ifg00mask,ifg01ip,ifg01mask,ifg02ip,ifg02mask
+admin,cisco,Internet,cisco_xe,22,192.168.100.141,77.77.77.78,10.0.92.2,255.255.255.252,10.1.17.1,255.255.255.252,10.1.18.1,255.255.255.252
+admin,cisco,CSR4,cisco_xe,22,192.168.100.142,77.77.77.77,10.0.91.1,255.255.255.252,10.1.15.1,255.255.255.252,10.1.16.1,255.255.255.252

@@ -1,0 +1,55 @@
+hostname {{ hostname }}
+!
+ip domain name {{ domain_name }}
+!
+ntp server {{ ntp_01 }} prefer
+ntp server {{ ntp_02 }}
+!
+interface GigabitEthernet0/0
+ ip address {{ management_ip }}
+ negotiation auto
+
+ip route 0.0.0.0 0.0.0.0 {{ next_hop }}
+!
+snmp-server community {{ snmp_community }} RO 6
+snmp-server trap-source GigabitEthernet0/0
+snmp-server location London {{ device_location }}
+{% for trap in snmp_traps -%}
+snmp-server enable traps {{ trap }}
+{%- endfor %}
+snmp-server host 10.10.12.15 {{ snmp_community }}
+snmp-server host 10.20.12.25 {{ snmp_community }}
+!
+{% for vlan in vlans -%}
+vlan {{ vlan.id }}
+ name {{ vlan.name }}
+{%- endfor %}
+!
+{% for interface in interfaces -%}
+interface {{ interface['name'] }}
+  description {{ interface['description']|upper }}
+  {% if interface['port_type'] == "trunk" -%}
+  switchport mode trunk
+  switchport mode trunk allowed vlan {{ interface['allowed_vlan'] }}
+  {%- else %}
+  switchport mode access
+  switchport access vlan {{ interface['vlan'] }}
+  {%- endif %}
+  no shutdown
+!
+{% endfor -%}
+{% for access_list in access_lists -%}
+access-list 10 remark {{ access_list.remark }}
+access-list 10 permit {{ access_list.acl }}
+{%- endfor %}
+access-list 10 deny any log
+!
+line con 0
+ exec-timeout 5 0
+ logging synchronous
+line vty 0 4
+ transport input ssh
+ access-class 10 in
+line vty 5 15
+ transport input ssh
+ access-class 10 in

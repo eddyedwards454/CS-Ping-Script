@@ -1,0 +1,15 @@
+#hostname {{ device }}
+
+interface lo1
+ ip address {{ lo1ip }} 255.255.255.255
+
+{%- if ifg00ip %}
+interface g1
+ ip address {{ ifg00ip }} {{ ifg00mask }}
+ no shutdown
+{%- endif %}
+
+{%- if device == 'Internet' %}
+int lo2
+ ip address 2.2.2.2 255.255.255.255
+{%- endif %}

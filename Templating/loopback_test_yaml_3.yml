@@ -1,0 +1,6 @@
+interfaces:
+  - name: Loopback20
+    description: Description for Loopback 20
+    ipv4_addr: 200.200.200.20
+    ipv4_mask: 255.255.255.255
+

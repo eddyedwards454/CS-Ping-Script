@@ -1,0 +1,24 @@
+{
+  "total_count": 673, 
+  "items": [
+    {
+      "hap": "delivered", 
+      "message": "Delivered: no-reply@example.com \u2192 jon.doe@gmail.com 'Some Email subject'", 
+      "type": "info", 
+      "created_at": "Wed, 19 Aug 2015 18:38:54 GMT", 
+      "message_id": "20150819183853.13720.31771@example.com"
+    }, 
+    {
+      "hap": "accepted", 
+      "message": "Accepted: no-reply@example.com \u2192 jon.doe@gmail.com 'Subject of this email here'", 
+      "type": "info", 
+      "created_at": "Wed, 19 Aug 2015 18:38:53 GMT", 
+      "message_id": "20150819183853.13720.31771@example.com"
+    }, 
+    {
+      "hap": "delivered", 
+      "message": "Delivered: no-reply@example.com \u2192 jane.doe@gmail.com 'Subject Line here'", 
+      "type": "info", 
+      "created_at": "Wed, 19 Aug 2015 18:37:50 GMT", 
+      "message_id": "20150819183749.13738.20180@example.com"
+    },

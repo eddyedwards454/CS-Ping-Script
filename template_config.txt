@@ -1,0 +1,4 @@
+interface GigabitEthernet0/2
+description Access Port
+switchport access vlan 20
+swithport mode access

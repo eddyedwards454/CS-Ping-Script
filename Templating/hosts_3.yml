@@ -1,0 +1,16 @@
+---
+hosts:
+  - name: 192.168.100.141
+    username: admin
+    password: cisco
+    port: 22
+    cmd: "show running-config"
+    type: cisco_xe
+
+INTERNET:
+  - name: 192.168.100.142
+    username: admin
+    password: cisco
+    port: 22
+    cmd: "show running-config"
+    type: cisco_xe

@@ -1,0 +1,10 @@
+ Node is :   SITE_A_BL211  The serial number is :   FDO24331BH5 The state is :  active
+ Node is :   SITE_A_SP101  The serial number is :   FDO24350402 The state is :  active
+ Node is :   SITE_A_BL111  The serial number is :   FDO24340N97 The state is :  active
+ Node is :   SITE-A-APIC1  The serial number is :   WZP243502KN The state is :  unknown
+ Node is :   SITE_A_SP201  The serial number is :   FDO243503XU The state is :  active
+ Node is :   SITE_B_SP101  The serial number is :   FDO243503YU The state is :  active
+ Node is :   SITE_B_SP102  The serial number is :   FDO2435042E The state is :  active
+ Node is :   SITE_B_BL112  The serial number is :   FDO24331EMU The state is :  active
+ Node is :   SITE_B_BL111  The serial number is :   FDO24340NBX The state is :  active
+ Node is :   SITE-B-APIC1  The serial number is :   WZP243502LK The state is :  unknown
